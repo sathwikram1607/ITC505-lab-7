@@ -141,12 +141,9 @@
             <span id="lastModified"></span>
         </p>
     </footer>
-
-    <script src="buildTime.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('lastModified').textContent = window.buildTime;
-        });
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
     </script>
 </div>
 </body>
