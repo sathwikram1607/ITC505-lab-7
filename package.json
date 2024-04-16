@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node -e \"console.log('Building...'); const fs = require('fs'); const path = require('path'); const buildTime = new Date().toISOString(); fs.writeFileSync(path.join(__dirname, 'public', 'buildTime.js'), 'window.buildTime=\\'' + buildTime + '\\'; console.log('Build timestamp:', buildTime);')\""
-
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
