@@ -8,6 +8,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #e7eaf6;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -22,7 +23,9 @@
             max-width: 350px;
             width: 100%;
         }
-
+        h1{
+            color: black;
+        }
         h2 {
             text-align: center;
             color: #333;
@@ -65,6 +68,7 @@
     </style>
 </head>
 <body>
+    <div>
     <form action="/cs212/homework/8" method="post">
         <h2>Create Your Mad Lib</h2>
 
@@ -85,5 +89,56 @@
 
         <input type="submit" value="Create Mad Lib">
     </form>
+    </div>
+    <div>
+        <h1>ADDENDUM</h1>
+        <h2><b>HTML Frontend:</b></h2>
+<P>
+<ul>
+    <li>You have an HTML form designed to submit a Mad Lib story. Users input various parts of speech (adjective, plural noun, person's name, verb, noun), which are then submitted to the server.</li>
+    <li>The form is styled using CSS for aesthetics and usability, including responsive input fields and buttons.</li>
+</ul>
+</P> 
+<h2><b>Server Setup:</b></h2>
+<p>
+    <ul>
+<li>The server is set up using Express, a popular Node.js framework for building web applications and APIs.</li>
+<li>Routes are defined for serving the HTML form (GET request) and for handling the form submission (POST request).</li>
+<li>The POST route processes the form data and generates a Mad Lib based on the user’s inputs.</li>
+    </ul>
+        </p>
+<h2><b>Package Configuration:</b></h2>
+<p>
+    <ul>
+<li>The package.json and package-lock.json files indicate dependencies and other configurations necessary for running the application.</li>
+<li>The project is dependent on Express version 4.18.2, and the server is launched using a start script defined in package.json.</li>
+    </ul>
+        </p>
+<h2><b>File Structure:</b></h2>
+<p>
+    <ul>
+<li>The use of the path module suggests that HTML files are served from a directory relative to the server script, using paths to ensure that files are correctly located regardless of the execution context.</li>
+    </ul>
+        </p>
+<h2><b>Potential Improvements/Additions:</b></h2>
+<p>
+    <ul>
+<li>Error Handling: Adding error handling on the server side to manage cases where the form data might not be sent correctly.</li>
+<li>User Feedback: Implementing client-side JavaScript to validate inputs before submission and provide immediate feedback.</li>
+<li>Enhancements: You might consider expanding the application to support multiple Mad Lib templates or storing user-generated Mad Libs in a database for later retrieval.</li>
+    </ul>
+        </p>
+    </div>
+<div>
+     <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</div>
 </body>
 </html>
